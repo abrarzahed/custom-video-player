@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightcoral;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body h1 {
+  font-size: 5vmin;
+  font-weight: 900;
+  letter-spacing: 2;
+  margin-bottom: 20px;
+  background: rgba(210, 180, 140, 0.344);
+  padding: 10px;
+  text-align: center;
+}
+
+body .screen {
+  width: 50%;
+  background: #222;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  body .screen {
+    width: 90%;
+  }
+}
+
+body .controls {
+  width: 50%;
+  background: #000;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+body .controls .btn {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+}
+
+body .controls .btn .fa-play {
+  color: lightgreen;
+}
+
+body .controls .btn .fa-stop {
+  color: crimson;
+}
+
+body .controls .btn .fa-pause {
+  color: #fff;
+}
+
+body .controls .btn:focus {
+  outline: none;
+}
+
+@media (max-width: 800px) {
+  body .controls {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
